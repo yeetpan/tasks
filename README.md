@@ -6,12 +6,6 @@ This repository contains my Java programming assignments organized by day:
 - `d3java`: Day 3 assignments
 - `d4`: Day 4 assignments
 
-Each folder includes practice on various core Java concepts like:
-- Packages & access modifiers
-- Locale, Calendar, Scanner
-- Collections (Generic & Non-Generic)
-- Comparable interface
-- Java Time API (LocalDate, Period, Duration, etc.)
 
 ---
 
