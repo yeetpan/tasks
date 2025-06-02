@@ -7,6 +7,7 @@ enum ItemType{
 // Orderable Interface
 interface  Orderable{
     public double getPrice();
+    public String getName();
 }
 
 // Abstract MenuItem Class
@@ -20,24 +21,23 @@ abstract class MenuItem implements  Orderable{
     public double getPrice(){
         return price;
     }
+    public String getName(){
+        return name;
+    }
 }
 // Beverage Class
  class Beverage extends MenuItem{
      public Beverage(String name,double price){
         super(name,price);
     }
-    public String getName(){
-         return name;
-    }
+
 }
 // Pastry Class
  class Pastry extends MenuItem{
     public Pastry(String name,double price){
         super(name,price);
     }
-    public String getName(){
-        return name;
-    }
+
 }
 
 // Order Class
@@ -48,11 +48,12 @@ class Order{
     }
     public void addItem(Orderable item){
         items.add(item);
+        System.out.println("Order Added: "+item.getName());
     }
     public void calculateTotal(){
         double total=0.0;
         for(Orderable item:items){
-            total=+item.getPrice();
+            total+=item.getPrice();
         }
         System.out.println(total);
     }
