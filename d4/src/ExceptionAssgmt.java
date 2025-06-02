@@ -12,9 +12,10 @@ public class ExceptionAssgmt {
         // Null pointer exception
             String str=null;
             System.out.println(str);  // throws NullPointerException
-        // NumberFormatExcepion
-            System.out.println("Enter a number");
-            int num=sc.nextInt(); //float number or string
+        //NumberFormatException
+            String input = sc.nextLine(); // Read input as String
+            int num = Integer.parseInt(input); // Try to parse as int
+            System.out.println("You entered: " + num);
         //IndexOutofBound Exception
             String[] lottery={"1M","250M","5M"};
             System.out.println("Enter a number to win Lottery");
