@@ -26,8 +26,8 @@ public class PasswordValidator {
             throw new InvalidPasswordException("Password must contain at least one digit (0-9).");
         }
 
-        if (!password.matches(".*[@#$%^&+=!(){}\\[\\]:;\"'<>,.?/~`_*-].*")) {
-            throw new InvalidPasswordException("Password must contain at least one special character (@, #, $, %, etc.).");
+        if (!password.matches(".*[^a-zA-Z0-9].*")) {
+            throw new InvalidPasswordException("Password must contain at least one special character (any non-letter, non-digit character).");
         }
 
     }
