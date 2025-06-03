@@ -8,7 +8,7 @@ This repository contains my Java programming assignments organized by day:
 - `d5`: Day 5 assignments
 - `d6`: Day 6 assignments
 
-inside d1->src the program/tasks are present.
+inside dn(day-n)->src the program/tasks are present.
 
 ---
 
