@@ -18,7 +18,7 @@ class Stack<T> {
         top = node;
     }
 
-    public T pop() {
+    public T pop() {    
         if (isEmpty()) return null;
         T item = top.data;
         top = top.next;
